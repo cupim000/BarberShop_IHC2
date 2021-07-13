@@ -52,6 +52,7 @@
             <li><a class="title" href="#home">Início</a></li>
             <li><a class="title" href="#about">Sobre</a></li>
             <li><a class="title" href="#services">Serviços</a></li>
+            <li><a class="title" href="#prices">Preços</a></li>
             <li><a class="title" href="#testimonials">Depoimentos</a></li>
             <li><a class="title" href="#contact">Contato</a></li>
           </ul>
@@ -79,6 +80,12 @@
             <p>
               Um salão inédito e exclusivo em Itabira-MG, especializado em
               serviços voltados para o público masculino.
+            </p>
+            <p>
+              <b
+                >Horário de Funcionamento: De segunda a sábado, das 08:00h às
+                20:00h</b
+              >
             </p>
             <a
               class="button"
@@ -172,6 +179,45 @@
 
       <div class="divider-1"></div>
 
+      <section class="section" id="prices">
+        <div class="container grid">
+          <header>
+            <h2 class="title">Preços</h2>
+            <p class="subtitle">
+              Confira os valores dos principais serviços oferecidos pela
+              <strong>BarberShop</strong>.
+            </p>
+          </header>
+          <div class="tabela-preco">
+            <div class="card-preco">
+              <h3 class="card-preco-header">Corte Degradê</h3>
+              <div class="preco"><sup>R$</sup>20</div>
+            </div>
+
+            <div class="card-preco">
+              <h3 class="card-preco-header">Corte Social</h3>
+              <div class="preco"><sup>R$</sup>15</div>
+            </div>
+
+            <div class="card-preco">
+              <h3 class="card-preco-header">Barboterapia</h3>
+              <div class="preco"><sup>R$</sup>25</div>
+            </div>
+
+            <div class="card-preco">
+              <h3 class="card-preco-header">Progressiva</h3>
+              <div class="preco"><sup>R$</sup>50</div>
+            </div>
+
+            <div class="card-preco">
+              <h3 class="card-preco-header">sobrancelha</h3>
+              <div class="preco"><sup>R$</sup>10</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="divider-1"></div>
       <!-- TESTIMONIALS -->
       <section class="section" id="testimonials">
         <div class="container">
@@ -240,6 +286,14 @@
               Entre em contato com a BarberShop, queremos tirar suas dúvidas,
               ouvir suas críticas e sugestões.
             </p>
+            <div class="links">
+              <ul class="grid">
+                <li><i class="icon-phone"></i> 31 995938414</li>
+                <li><i class="icon-map-pin"></i> A. João Pinheiro, 346</li>
+                <li><i class="icon-mail"></i> contatobarbershop@gmail.com</li>
+              </ul>
+            </div>
+            <p></p>
             <a
               href="https://api.whatsapp.com/send?phone=+5531995938414&text=Oi! Gostaria de agendar um horário"
               class="button"
@@ -247,14 +301,15 @@
               ><i class="icon-whatsapp"></i> Entrar em contato</a
             >
           </div>
-
-          <div class="links">
-            <ul class="grid">
-              <li><i class="icon-phone"></i> 31 995938414</li>
-              <li><i class="icon-map-pin"></i> A. João Pinheiro, 346</li>
-              <li><i class="icon-mail"></i> contatobarbershop@gmail.com</li>
-            </ul>
-          </div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3758.0353519154264!2d-43.22923558542962!3d-19.62578633398864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa5a1bb39e580d5%3A0x873b6f8c24f2a3dc!2sAv.%20Jo%C3%A3o%20Pinheiro%2C%20Itabira%20-%20MG!5e0!3m2!1spt-BR!2sbr!4v1626129615622!5m2!1spt-BR!2sbr"
+            width="500"
+            height="350"
+            align="center"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
         </div>
 
         <div class="container grid">
@@ -267,23 +322,28 @@
           </div>
 
           <div class="contato-right">
-            <h2 class="title">Formulário para contato</h2>
+            <h2 align="center"><b>Formulário para contato</b></h2>
+
             <form>
               <div class="input-group">
                 <input type="text" class="field" id="nome" required />
-                <label for="nome" class="field-label">Nome</label>
+                <label for="nome" class="field-label">Nome:</label>
               </div>
               <div class="input-group">
                 <input type="email" class="field" id="email" required />
-                <label for="email" class="field-label">E-mail</label>
+                <label for="email" class="field-label">E-mail:</label>
               </div>
               <div class="input-group">
-                <input type="date" class="field" id="date" required />
-                <label for="date" class="field-label">Data</label>
+                <input type="date" class="field" id="data" required />
+                <label for="date" class="field-label">Data:</label>
               </div>
               <div class="input-group">
-                <textarea class="field" id="mensagem" required></textarea>
-                <label for="mensagem" class="field-label">Mensagem</label>
+                <input type="text" class="field" id="assunto" required />
+                <label for="assunto" class="field-label">Assunto:</label>
+              </div>
+              <div class="input-group">
+                <input type="text" class="field" id="mensagem" required />
+                <label for="mensagem" class="field-label">Mensagem:</label>
               </div>
               <button class="button" type="submit" class="btn btn-submit">
                 Enviar
